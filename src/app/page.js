@@ -14,7 +14,6 @@ const Home = () => {
   ];
 
   return (
-  <>
   <div>
     <Head>
       <title>Home</title>
@@ -72,24 +71,22 @@ const Home = () => {
 
       <div className="w-full">
         <div id="default-carousel" className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative" >
-              <div style={{backgroundImage: `url({slides[0].url})`}} className="w-full h-full rounded-2xl bg-center bg-cover duration-5--">
-            <img src="http://placehold.it/900x350" classname="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-          </div>
+          <div style={{backgroundImage: `url(${slides[0].url})`}} className="w-full h-full rounded-2xl bg-center bg-cover duration-5--">
         </div>
-        <button type="button" classname="absolute top-[50%] -translate-x-0 translate-y[-50%] left-5">
-            <span classname="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg classname="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 6 10">
-                    <path stroke="currentcolor" strokelinecap="round" strokelinejoin="round" strokewidth="2" d="m5 1 1 5l4 4"/>
+        <button type="button" className="absolute top-[50%] -translate-x-0 translate-y[-50%] left-5">
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg size={30} className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m5 1 1 5l4 4"/>
                 </svg>
-                <span classname="sr-only">previous</span>
+                <span className="sr-only">previous</span>
             </span>
         </button>
-        <button type="button" classname="absolute top-[50%] -translate-x-0 translate-y[-50%] left-5">
-            <span classname="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg classname="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 6 10">
-                    <path stroke="currentcolor" strokelinecap="round" strokelinejoin="round" strokewidth="2" d="m1 9 4-4-4-4"/>
+        <button type="button" className="absolute top-[50%] -translate-x-0 translate-y[-50%] left-5">
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg size={30} className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
                 </svg>
-                <span classname="sr-only">next</span>
+                <span className="sr-only">next</span>
             </span>
         </button>
         </div>
@@ -199,7 +196,7 @@ const Home = () => {
       <p className="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </div>
   </footer>
-  </>
+  </div>
 )}
 
 export default Home
