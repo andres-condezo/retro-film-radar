@@ -1,6 +1,20 @@
 import Head from 'next/head'
 
-const Home = () => (
+const Home = () => {
+  const slides = [
+    {
+      url: 'http://placehold.it/900x350',
+    },
+    {
+      url: 'http://placehold.it/900x350',
+    },
+    {
+      url: 'http://placehold.it/900x350',
+    },
+  ];
+
+  return (
+  <>
   <div>
     <Head>
       <title>Home</title>
@@ -43,48 +57,41 @@ const Home = () => (
     <div className="grid grid-cols-2 gap-2">
       <div className="pl-6 w-48 text-sm font-medium text-gray-900 bg-white dark:bg-gray-700 dark:text-white">
         <h1 className="text-slate-300">Retro Film Radar</h1>
-        <div className="inline-grid grid-cols-1 gap-4">
-          <a href="#" className="list-group-item">Category 1</a>
-          <a href="#" className="list-group-item">Category 2</a>
-          <a href="#" className="list-group-item">Category 3</a>
+        <div className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+          <a href="#" className="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+            Category 1
+          </a>
+          <a href="#" className="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+            Category 2
+          </a>
+          <a href="#" className="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+            Category 3
+          </a>
         </div>
       </div>
 
       <div className="w-full">
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="http://placehold.it/900x350" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="First slide"/>
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="http://placehold.it/900x350" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Second slide"/>
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="http://placehold.it/900x350" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Third slide"/>
-              <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide" />
-            </div>
+        <div id="default-carousel" className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative" >
+              <div style={{backgroundImage: `url({slides[0].url})`}} className="w-full h-full rounded-2xl bg-center bg-cover duration-5--">
+            <img src="http://placehold.it/900x350" classname="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          </div>
-          <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                  </svg>
-                  <span className="sr-only">Previous</span>
-              </span>
-          </button>
-          <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                  </svg>
-                  <span className="sr-only">Next</span>
-              </span>
-          </button>
+        </div>
+        <button type="button" classname="absolute top-[50%] -translate-x-0 translate-y[-50%] left-5">
+            <span classname="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg classname="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 6 10">
+                    <path stroke="currentcolor" strokelinecap="round" strokelinejoin="round" strokewidth="2" d="m5 1 1 5l4 4"/>
+                </svg>
+                <span classname="sr-only">previous</span>
+            </span>
+        </button>
+        <button type="button" classname="absolute top-[50%] -translate-x-0 translate-y[-50%] left-5">
+            <span classname="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg classname="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 6 10">
+                    <path stroke="currentcolor" strokelinecap="round" strokelinejoin="round" strokewidth="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span classname="sr-only">next</span>
+            </span>
+        </button>
         </div>
 
         <div className="row">
@@ -192,8 +199,7 @@ const Home = () => (
       <p className="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </div>
   </footer>
-
-  </div>
-)
+  </>
+)}
 
 export default Home

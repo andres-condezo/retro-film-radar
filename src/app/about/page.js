@@ -1,7 +1,9 @@
-const About = () => (
+const About = () => {
+  const mssg = "hello"
+  return (
     <div>
-      <p>About</p>
+      <p>About - {mssg} </p>
     </div>
-)
+)}
 
 export default About
