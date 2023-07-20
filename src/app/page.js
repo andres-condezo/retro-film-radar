@@ -111,9 +111,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
+        <div className="gap-8 columns-3">
+          <div className="w-full aspect-video py-4">
+            <div className="w-full aspect-video">
               <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
               <div className="card-body">
                 <h4 className="card-title">
@@ -128,7 +128,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="w-full aspect-video py-4">
             <div className="card h-100">
               <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
               <div className="card-body">
@@ -144,7 +144,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="w-full aspect-video py-4">
             <div className="card h-100">
               <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
               <div className="card-body">
@@ -160,7 +160,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="w-full aspect-video py-4">
             <div className="card h-100">
               <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
               <div className="card-body">
@@ -176,7 +176,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="w-full aspect-video py-4">
             <div className="card h-100">
               <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
               <div className="card-body">
@@ -192,7 +192,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="w-full aspect-video py-4">
             <div className="card h-100">
               <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
               <div className="card-body">
